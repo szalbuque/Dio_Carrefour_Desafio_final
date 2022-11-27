@@ -1,0 +1,13 @@
+# O banco de dados ficará num volume persistente criado na GCP
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-dados
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: ""
+  volumeName: fileserver
+  resources:
+    requests:
+      storage: 1T

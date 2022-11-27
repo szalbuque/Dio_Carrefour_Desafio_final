@@ -95,36 +95,25 @@ mysql-64fb768769-qs2qr |  1/1  |   Running |  0     |     10m
 
 * Inspecionar o pod:
 > kubectl describe pod mysql-64fb768769-qs2qr
-Name:             mysql-64fb768769-qs2qr
-Namespace:        default
-Node:             gke-cluster-app-cadastro-default-pool-5c805f52-3qqv/10.158.0.16
-Start Time:       Sat, 26 Nov 2022 18:48:36 -0300
-Labels:           app=mysql
-                  pod-template-hash=64fb768769
-Status:           Running
-IP:               10.100.1.6
-Containers:
-  mysql:
-    Container ID:  containerd://22dbc86873bfe88e272580da834b275612b65d0a3e99c7514e055bf9d27e97fd
-    Image:         szalbuque/cadastro-db-desafio:1.0
-    Port:          3306/TCP
-    Mounts:
-      /var/lib/mysql from mysql-dados (rw)
-      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-dn7nh (ro)
-Volumes:
-  mysql-dados:
-    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)
-    ClaimName:  mysql-dados
-    ReadOnly:   false
 
-Events:
-  Type    Reason     Age    From               Message
-  ----    ------     ----   ----               -------
-  Normal  Scheduled  6m45s  default-scheduler  Successfully assigned default/mysql-64fb768769-qs2qr to gke-cluster-app-cadastro-default-pool-5c805f52-3qqv
-  Normal  Pulling    6m41s  kubelet            Pulling image "szalbuque/cadastro-db-desafio:1.0"
-  Normal  Pulled     6m24s  kubelet            Successfully pulled image "szalbuque/cadastro-db-desafio:1.0" in 17.410177508s
-  Normal  Created    6m24s  kubelet            Created container mysql
-  Normal  Started    6m23s  kubelet            Started container mysql
+Name:             mysql-64fb768769-qs2qr<br>
+Namespace:        default<br>
+Node:             gke-cluster-app-cadastro-default-pool-5c805f52-3qqv/10.158.0.16<br>
+Start Time:       Sat, 26 Nov 2022 18:48:36 -0300<br>
+Labels:           app=mysql<br>
+Status:           Running<br>
+IP:               10.100.1.6<br>
+Containers:<br>
+  mysql:<br>
+    Image:         szalbuque/cadastro-db-desafio:1.0<br>
+    Port:          3306/TCP<br>
+    Mounts:<br>
+      /var/lib/mysql from mysql-dados (rw)<br>
+Volumes:<br>
+  mysql-dados:<br>
+    Type:       PersistentVolumeClaim (a reference to a PersistentVolumeClaim in the same namespace)<br>
+    ClaimName:  mysql-dados<br>
+    ReadOnly:   false<br>
 
 ## Implantação do container da aplicação backend (php)
 * Na pasta backend, onde está o arquivo deployment.yml, rodar o comando:

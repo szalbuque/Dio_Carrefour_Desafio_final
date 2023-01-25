@@ -129,7 +129,7 @@ php-546ccdcb77-p8qsq  |   1/1  |   Running  | 0     |     95s
 > kubectl exec --tty --stdin php-546ccdcb77-p8qsq bash
 
 ## Implantação dos serviços: Load Balancer e MySQL-connection
-> kubectl apply -f services.yml
+> kubectl apply -f services.yml<br>
 > kubectl get service
 
 NAME       |        TYPE     |      CLUSTER-IP  |   EXTERNAL-IP   |   PORT(S)   |     AGE

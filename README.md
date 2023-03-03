@@ -1,12 +1,26 @@
 # Desafio final Dio.me / Banco Carrefour
 
+![](images/1.png)
+
 ## Objetivo:
 Criar um pipeline de deploy desta aplicação em forma de containers em um cluster Kubernetes.
 <br>O participante poderá utilizar um cluster kubernetes em nuvem (Preferencialmente utilizando
 GCP).
 <br>O pipeline de CI/CD poderá ser criado utilizando-se o Gitlab, Terraform ou outra solução desejada.
 
-Este repositório contém:
+## Problema:
+
+![](images/2.png)
+
+## Proposta:
+
+![](images/3.png)
+
+## Solução:
+
+![](images/4.png)
+
+## Este repositório contém:
 * os arquivos da aplicação "Cadastro de usuários", nas pastas backend, db e frontend;
 * os arquivos de geração das imagens docker (dockerfile):
   * na pasta backend: para gerar a imagem da aplicação em php;

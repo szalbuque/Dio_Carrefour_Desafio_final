@@ -131,7 +131,7 @@ Volumes:<br>
 
 ## Implantação do container da aplicação backend (php)
 * Na pasta backend, onde está o arquivo deployment.yml, rodar o comando:
-> kubectl apply -f deployment.yml
+> kubectl apply -f deployment.yml<br>
 > kubectl get pods
 
 NAME | READY | STATUS | RESTARTS | AGE
